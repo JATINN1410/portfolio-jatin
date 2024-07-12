@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help</title>
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Emergency Help</h1>
+            <p>If you require immediate assistance, click the button below to see a list of online doctors.</p>
+        </header>
+
+        <main>
+            <button class="emergency-button" id="findDoctorsButton">Find Doctors</button>
+            <div id="doctorList" class="hidden">
+                <h2>Available Doctors</h2>
+                <div id="onlineDoctors" class="doctor-category">
+                    <h3>Online Doctors</h3>
+                    <ul id="onlineList"></ul>
+                </div>
+                <div id="bestDoctors" class="doctor-category">
+                    <h3>Best Doctors</h3>
+                    <ul id="bestList"></ul>
+                </div>
+            </div>
+            <div id="chatSection" class="hidden">
+                <h2>Chat Section</h2>
+                <div id="chatMessages"></div>
+                <textarea id="messageInput" placeholder="Type your message..."></textarea>
+                <button id="sendMessageButton">Send</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Contact us: info@example.com</p>
+        </footer>
+    </div>
+
+    <script src="emergency.js"></script>
+
+</body>
+</html>
